@@ -8,6 +8,10 @@ Update a random doc in pouchdb.
 update(db, docs [, updateFn])
 ```
 
+## install
+
+    $ npm install pouch-random-update
+
 ## Example
 
 ```js
