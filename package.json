@@ -3,6 +3,9 @@
   "version": "0.0.2",
   "description": "Update random docs in pouchdb",
   "main": "index.js",
+  "keywords": [
+    "pouchdb"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "browserify -d example/example.js > example/bundle.js",
