@@ -1,6 +1,6 @@
 {
   "name": "pouch-random-update",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Update random docs in pouchdb",
   "main": "index.js",
   "scripts": {
