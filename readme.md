@@ -22,14 +22,14 @@ var pouch = new Pouch('some-db');
 pouch.allDocs({
   include_docs: true
 }).then(function(resp) {
-var docs = resp.rows.map(function(row) {
-  return row.doc;
-});
-setInterval(function() {
-  // default updateFn returns promise from pouch.put()
-  update(db, docs).then(function(resp) {
-    console.log(resp);
+  var docs = resp.rows.map(function(row) {
+    return row.doc;
   });
-}, 3000);
+  setInterval(function() {
+    // default updateFn returns promise from pouch.put()
+    update(db, docs).then(function(resp) {
+      console.log(resp);
+    });
+  }, 3000);
 });
 ```
