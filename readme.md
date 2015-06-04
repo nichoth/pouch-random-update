@@ -27,7 +27,7 @@ pouch.allDocs({
   });
   setInterval(function() {
     // default updateFn returns promise from pouch.put()
-    update(db, docs).then(function(resp) {
+    update(pouch, docs).then(function(resp) {
       console.log(resp);
     });
   }, 3000);
